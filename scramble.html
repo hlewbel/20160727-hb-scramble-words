@@ -22,8 +22,11 @@
             // Grab the corresponding scrambled word from the SCRAMBLED array
             var scramWord = SCRAMBLED[i];
             // prompt the user to guess the original word when given the scrambled word
+            // scramWord = "euour";
             alert("The scrambled word is: " + scramWord);
             var guessWord = prompt("Please guess the original word");
+            var lowerWord = guessWord.trim().toLowerCase();
+            // console.log(lowerWord);
             // If the user guesses wrong, tell them they were wrong and the right word.
             if (lowerWord !== word){
                 alert("You guessed wrong, the word was:" + word);
